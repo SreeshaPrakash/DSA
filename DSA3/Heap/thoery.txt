@@ -1,0 +1,18 @@
+
+- special complete binary tree that satifies the heap property.
+- heap property = 2types => 
+1. max heap property - root value is maximum of heap
+2. min heap property - root value is minimum of heap
+3. usually implimented as array
+
+
+- application - >
+1. cpu task management
+2. task scheduling
+3.find shortest path
+4. priority queue implimentation   - elements with highest priority are served first
+5. heapsort algorithm - sorting using heap
+6. dijikthra's and prims's algorithm
+
+
+

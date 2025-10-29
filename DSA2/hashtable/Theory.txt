@@ -1,0 +1,39 @@
+ -> datatype used to store key value pairs by maintaining insertion order, 
+ -> hashes the key to create index to store the key-value pairs
+ -> collision - if hash value of different keys become same the index value becomes same and collision occurs.
+
+ -> collision handling methods :
+
+ ->   a.  seperate Chaining :  method of creating an array/linkedlist in each index inorder to store multiple key-value pairs in same index which avoids collision.
+
+ ->   b.  Open Addressing: instead of keeping multiple pairs in same index , we find another empty slot using probing technique.  
+                         - memory efficient method
+                         - 3 types of open Addressing methods:
+ ->      1. linear probing:  checks next cell sequentially
+                             index =( hash + i) % size;
+                        adv : memory efficient (no extra lists)
+                        dis : causes clustering  - nearby slots fills quickly
+         2. quadratic probing:  checks square distance
+                             index = (hash + i^2) % size;
+         3. double hashing : uses another hash function to calculate step size
+                            index =  (  hash1 + i * (hash2(key))) % size;
+
+
+
+
+ -> Load Factor - ratio of number of elements / size of table;
+ -> high load factor = more collision
+ -> to keep efficiency (o(1) operations) most hashtables resizes when loadfactor is greater than 0.7 / 0.75 (threshold)
+
+
+ -> Rehashing: method or resizing the table and recomputing all the existing keys into the new larger table.
+ usually done when the: 
+  - table becomes too full
+  - too many collisions start happening
+ -> rehashing is done because as the number of element grows the chances of collision increases. and this is measured using loadfactor.
+
+
+
+
+
+

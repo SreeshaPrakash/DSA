@@ -1,0 +1,29 @@
+TRIE - tree like data structure used to store ad search strings efficiently
+ - is a special type of N-ary tree used to store strings such 
+ - each node represents a character of strings
+ - each path from a root to a node represents a prefix
+
+
+ USE:
+
+ - fast prefix search
+ - efficient word insertion and lookup  in dictionaries
+ - auto complete
+ - spell check ( finding all words starting with that prefix)
+
+
+
+real world usecases:
+
+- auto complete system
+- spell checking
+- IP routing  (longest prefix match)
+- word game
+- predictive text typing
+
+
+limitation :
+
+- use more memory
+- not efficient if most strings don't share prefixes
+
