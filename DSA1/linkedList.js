@@ -29,6 +29,7 @@ class LinkedList{
         const node = new Node(value)
         if(!this.head){
             this.head = node;
+            this.size++;
             return
         }
         let curr = this.head
@@ -44,6 +45,8 @@ class LinkedList{
         const node = new Node(value)
         if(!this.head ){
             this.head = node
+            this.size++;
+            return;
         }
         if(index==0){
             node.next = this.head
