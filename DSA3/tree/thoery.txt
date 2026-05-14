@@ -1,0 +1,5 @@
+applications of bstree:
+- faster search
+- used for sorting (inorder traversal)
+- database indexing
+- file system
